@@ -7,6 +7,7 @@
     <option name="transferred" value="true" />
   </component>
   <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="codingStandard" value="PSR12" />
     <option name="highlightLevel" value="WARNING" />
     <option name="transferred" value="true" />
   </component>
@@ -18,6 +19,7 @@
   <component name="PhpExternalFormatter">
     <option name="externalFormatter" value="PHP_CBF" />
   </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.3" />
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />
   </component>
