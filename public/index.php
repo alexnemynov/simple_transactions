@@ -10,14 +10,15 @@ define('VIEWS_PATH', $root . 'views' . DIRECTORY_SEPARATOR);
 
 /* CODE */
 require APP_PATH . 'App.php';
+require APP_PATH . 'helpers.php';
 
 $files = getTransactionFiles(FILES_PATH);
 
 $transactions = [];
 foreach ($files as $file) {
-    $transactions = array_merge($transactions, getTransactions($file));
+    $transactions = array_merge($transactions, getTransactions($file, 'parseTransaction'));
 }
 
-var_dump($transactions);
+$totals = calculateTotals($transactions);
 
 require VIEWS_PATH . 'transaction.php';
